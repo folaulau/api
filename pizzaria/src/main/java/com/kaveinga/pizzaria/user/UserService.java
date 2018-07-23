@@ -1,0 +1,14 @@
+package com.kaveinga.pizzaria.user;
+
+import java.util.List;
+
+public interface UserService {
+
+	User create(User user);
+	User update(User user);
+	User getById(Long id);
+	List<User> getAll();
+	User getByEmail(String email);
+	Boolean remove(Long id);
+	Boolean remove(User user);
+}
